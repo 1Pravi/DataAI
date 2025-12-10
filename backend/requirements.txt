@@ -1,7 +1,10 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-multipart
 pandas
 openpyxl
+numpy
+matplotlib
+seaborn
 google-generativeai
 python-dotenv
