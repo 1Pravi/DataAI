@@ -38,14 +38,7 @@ df_store = {
 app = FastAPI()
 
 # CORS so React (localhost:3000) can talk to FastAPI (localhost:8000)
-origins = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-    "https://datachatpro.vercel.app",
-    "https://fffwqwq-jjnuzm8v8-hhhhs-projects-d30a9823.vercel.app",
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
