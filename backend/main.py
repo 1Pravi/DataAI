@@ -19,7 +19,7 @@ load_dotenv()
 # ============== CONFIG ==============
 
 # Set your Gemini API key here or via environment variable
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyDt1skZujCULgDk-aUIqmkq5pKPb-S1e_4")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Folder to save plot images
