@@ -113,7 +113,7 @@ Example Output:
 }}
 """
 
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("models/gemini-flash-latest")
     response = model.generate_content(textwrap.dedent(prompt))
     
     # Parse response
@@ -187,7 +187,7 @@ FOLLOWUP_QUESTIONS_START
 <question 2>
 """
 
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("models/gemini-flash-latest")
     response = model.generate_content(textwrap.dedent(prompt))
     full_text = response.text
 
@@ -348,3 +348,4 @@ async def ask_question(payload: AskRequest):
         response["execution_error"] = exec_error
 
     return response
+
